@@ -21,8 +21,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, stratif
 # Save locally for artifact logging
 train_df = pd.DataFrame(X_train, columns=[f"f{i}" for i in range(X_train.shape[1])])
 train_df["target"] = y_train
-#train_path = "train_dataset.csv"
-#train_df.to_csv(train_path, index=False)
+train_path = "train_dataset.csv"
+train_df.to_csv(train_path, index=False)
 
 def hash_array(arr):
     """Compute a hash for a numpy array"""
