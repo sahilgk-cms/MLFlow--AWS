@@ -10,6 +10,7 @@ Create a bucket in Amazon **S3** to store all artifact data.
 - Create a new **IAM role** with policy **AmazonS3FullAccess** and assign it to the **EC2** instance.
 - In **Security**, allow port **5000** in **Inbound rules**. This is for running **MLFlow**.
 - Once the instance is created, download **.pem** for connecting it with SSH.
-- This is the command used.
+
 ```
+ssh -i "mlflow-sk.pem" ubuntu@ec2-35-154-73-149.ap-south-1.compute.amazonaws.com
 ``` 
