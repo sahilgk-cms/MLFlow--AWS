@@ -62,4 +62,4 @@ This can be viewed at http://{ec2-ip}:5000/#/experiments/{experiment_id}/runs/{r
 This can be viewed at http://{ec2-ip}:5000/#/experiments/{experiment_id}/models/{model_id}/artifacts
 <img width="1635" height="542" alt="image" src="https://github.com/user-attachments/assets/fc8ac30f-db44-4121-9a29-33cb9f7718ba" />
 
-
+**Note:** Both data and model versions are stored in S3 rather than on EC2 instance which saves space.
