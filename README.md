@@ -2,7 +2,8 @@
 Use MLFlow with Amazon EC2 + S3
 
 ## Create a S3 bucket
-Create a bucket in Amazon **S3** to store all artifact data.
+- Create a bucket in Amazon **S3** to store all artifact data.
+- Artifact name: **mlflow-artifacts-sahil**
 
 ## Create an EC2 instance
 - Create am Amazon **EC2** instance.
@@ -13,4 +14,15 @@ Create a bucket in Amazon **S3** to store all artifact data.
 
 ```
 ssh -i "mlflow-sk.pem" ubuntu@ec2-35-154-73-149.ap-south-1.compute.amazonaws.com
-``` 
+```
+
+## Installing AWS CLI:
+Run these commands to install aws cli inside ec2 instance
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install
+```
+
+
