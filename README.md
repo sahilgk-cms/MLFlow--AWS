@@ -58,5 +58,8 @@ python3 first_exp.py
 This can be viewed at http://{ec2-ip}:5000/#/experiments/{experiment_id}/runs/{run_id}/artifacts
 <img width="1882" height="798" alt="image" src="https://github.com/user-attachments/assets/dadefd36-01f7-4ae7-bbd2-ce102803fbd6" />
 
+### the model versions will also be stored as an artifact in S3
+This can be viewed at http://{ec2-ip}:5000/#/experiments/{experiment_id}/models/{model_id}/artifacts
+<img width="1635" height="542" alt="image" src="https://github.com/user-attachments/assets/fc8ac30f-db44-4121-9a29-33cb9f7718ba" />
 
 
