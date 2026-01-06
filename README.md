@@ -31,9 +31,25 @@ sudo apt install python3 python3-pip -y
 sudo apt install python3-full python3-venv -y
 ```
 
-## Creating the virtual environment
+## Creating the virtual environment, installing requirements and tmux
 ```
+python3 -m venv mlflow-venv
 source mlflow-venv/bin/activate
 pip install -r "requirements.txt"
+sudo apt install tmux -y
 ```
 
+## Run MLFLow server inside the tmux session
+```
+mlflow server \
+  --backend-store-uri sqlite:///mlflow.db \
+  --default-artifact-root s3://mlflow-artifacts-sahil/artifacts \
+  --host 0.0.0.0 \
+  --port 5000 \
+  --allowed-hosts "*" \
+  --cors-allowed-origins "*"
+```
+## Run python script inside another tmux session
+```
+python3 first_exp.py
+```
