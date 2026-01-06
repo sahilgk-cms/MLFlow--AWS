@@ -53,3 +53,10 @@ mlflow server \
 ```
 python3 first_exp.py
 ```
+
+### The dataset versions will be stored as an artifact in S3
+This can be viewed at http://{ec2-ip}:5000/#/experiments/{experiment_id}/runs/{run_id}/artifacts
+<img width="1882" height="798" alt="image" src="https://github.com/user-attachments/assets/dadefd36-01f7-4ae7-bbd2-ce102803fbd6" />
+
+
+
