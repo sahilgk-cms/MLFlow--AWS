@@ -12,6 +12,16 @@ latest_versions = client.get_latest_versions(name = model_name, stages = None)
 latest_version = latest_versions[0].version
 print(f"Latest version for model: {model_name} | Version: {latest_version}")
 
+
+# Setting the datahash with the model version
+# client.set_model_version_tag(
+#     name = model_name,
+#     version = latest_version,
+#     key = "data_hash",
+#     value = data_hash
+# )
+
+
 # Get the data hash for that model
 mv = client.get_model_version(
     name = model_name,
